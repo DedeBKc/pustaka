@@ -1,0 +1,9 @@
+# Login as User :
+- sayed@gmail.com/root123
+
+# Login as Staff :
+- mulyasir@gmail.com/root123
+
+# Login as Admin :
+# Tambah alamat pada URL Browser : /admin_login
+- admin@gmail.com/root123

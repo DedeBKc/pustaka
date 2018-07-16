@@ -1,0 +1,234 @@
+body,html{
+height: 100%;
+background: url('/images/wall3.jpg');
+}
+
+.pagination {
+  position: relative;
+  top: -10px;
+  margin: 0;
+}
+
+h4 {
+  color: #337ab7;
+}
+
+.table-bordered>tbody>tr>td {
+  border: 1px solid #222;
+}
+
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #222;
+}
+
+thead, thead>tr, thead>td {
+  border: 1px solid #222;
+}
+
+.alert-info {
+    color: #3c6384;
+    background-color: rgb(174, 203, 218);
+    border-color: #bce8f1;
+}
+
+.alert-warning {
+    color: rgb(89, 134, 173);
+    background-color: rgba(16, 16, 16, 0.37);
+    border-color: #5a5853;
+}
+
+.panel-default {
+     border-color: black;
+     height: 600px;
+}
+
+.navbar-inverse {
+    background-color: rgba(34, 34, 34, 0.38);
+    border-color: rgba(8, 8, 8, 0.58);
+}
+
+.legal {
+    position: absolute;
+    /* right: 100px; */
+    /* bottom: -385px; */
+    top: 730px;
+    left: 320px;
+}
+
+.panel-transparent {
+  /*background: rgba(255, 255, 255, 0.2);*/
+  background: rgba(255, 255, 255, 0.05);
+  color: #ddd;
+}
+
+tr {
+  /*background: rgba(255, 255, 255, 0.2);*/
+  background: rgb(40, 39, 56);
+  color: #eee;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd):hover, .table-striped>tbody>tr:nth-of-type(even):hover {
+  /*color: #337ab7;*/
+  background: #212529;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd), .table-striped>tbody>tr:nth-of-type(even) {
+    /*background: rgba(255, 255, 255, 0.2);*/
+    background: #32383e;
+    color: #fff;
+}
+
+
+thead {
+  /*background: #222;*/
+  background: #191919;
+  color: #bbb;
+}
+
+/* remove outer padding */
+.main .row{
+padding: 0px;
+margin: 0px;
+}
+
+/*Remove rounded coners*/
+
+nav.sidebar.navbar {
+border-radius: 0px;
+}
+
+nav.sidebar, .main{
+-webkit-transition: margin 200ms ease-out;
+-moz-transition: margin 200ms ease-out;
+-o-transition: margin 200ms ease-out;
+transition: margin 200ms ease-out;
+}
+
+/* Add gap to nav and right windows.*/
+.main{
+padding: 10px 10px 0 10px;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media (min-width: 768px) {
+
+/*Allow main to be next to Nav*/
+.main{
+position: absolute;
+width: calc(100% - 40px); /*keeps 100% minus nav size*/
+margin-left: 40px;
+float: right;
+}
+
+/*lets nav bar to be showed on mouseover*/
+nav.sidebar:hover + .main{
+margin-left: 200px;
+}
+
+/*Center Brand*/
+nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+margin-left: 0px;
+}
+/*Center Brand*/
+nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+text-align: center;
+width: 100%;
+margin-left: 0px;
+}
+
+/*Center Icons*/
+nav.sidebar a{
+padding-right: 13px;
+}
+
+/*adds border top to first nav box */
+nav.sidebar .navbar-nav > li:first-child{
+border-top: 1px #777 solid;
+}
+
+/*adds border to bottom nav boxes*/
+nav.sidebar .navbar-nav > li{
+border-bottom: 1px #777 solid;
+}
+
+/* Colors/style dropdown box*/
+nav.sidebar .navbar-nav .open .dropdown-menu {
+position: static;
+float: none;
+width: auto;
+margin-top: 0;
+background-color: transparent;
+border: 0;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+/*allows nav box to use 100% width*/
+nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+padding: 0 0px 0 0px;
+}
+
+/*colors dropdown box text */
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+color: #777;
+}
+
+/*gives sidebar width/height*/
+nav.sidebar{
+width: 200px;
+height: 100%;
+margin-left: -160px;
+float: left;
+z-index: 8000;
+margin-bottom: 0px;
+}
+
+/*give sidebar 100% width;*/
+nav.sidebar li {
+width: 100%;
+}
+
+/* Move nav to full on mouse over*/
+nav.sidebar:hover{
+margin-left: 0px;
+}
+/*for hiden things when navbar hidden*/
+.forAnimate{
+opacity: 0;
+}
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+
+@media (min-width: 1330px) {
+
+/*Allow main to be next to Nav*/
+.main{
+width: calc(100% - 200px); /*keeps 100% minus nav size*/
+margin-left: 200px;
+}
+
+/*Show all nav*/
+nav.sidebar{
+margin-left: 0px;
+float: left;
+}
+/*Show hidden items on nav*/
+nav.sidebar .forAnimate{
+opacity: 1;
+}
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+color: salmon;
+background-color: transparent;
+}
+
+nav:hover .forAnimate{
+opacity: 1;
+}
+section{
+padding-left: 15px;
+}
